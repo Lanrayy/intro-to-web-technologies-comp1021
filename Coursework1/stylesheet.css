@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Global Styles*/
+
+.button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px gray solid;
+}
+
+/* Styles for navigation bar */
+
+#site-logo{
+    width:50px;
+}
+
+header {
+    height: 150px;
+    background-color: rgb(199, 199, 199);
+
+}
+
+.social-icons {
+    height: 20px;
+}
+
+#twitter-icon{
+    height: 25px;
+}
+
+/* Styles for section 1 */
+
+#main-image{
+    height: 300px;
+}
+
+
+/* Styles for Section 2*/
+
+#home-section-2{
+    height:100px;
+    background-color: rgb(194, 194, 194);
+}
+
+
+/* Styles for Section 3 */
+
+#home-section-3{
+    height: 700px;
+    background-color: blue;
+
+}
+
+.services-box{
+    height: 200px;
+    width:100px;
+    background-color: pink;
+    border: 1px black solid;
+}
+
+/* Styles for Footer*/
+
+footer {
+    background-color: gray;
+}
+
+
+
+
