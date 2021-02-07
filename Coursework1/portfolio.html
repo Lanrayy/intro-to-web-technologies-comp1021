@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <html lang="en"/>
         <meta charset="UTF-8" />
         <title>Coursework 1 Website</title>
-        <link rel="stylesheet" href="./stylesheet.css"/>
+        <link rel="stylesheet" href="./styles.css"/>
     </head>
 
-    <body >
+    <body>
         <!--Header of the website-->
-        <header id="home-banner">
+        <header class="header">
+            <div class="header-column header-column-2">
                 <!--Logo-->
-            <img id="site-logo" src="images/logo.png" />
+                <img class="header-item" id="site-logo" src="images/logo.png" />
+            </div>
 
-            <!--Social Media Icons-->
-            <img class="social-icons" id="header-facebook-icon" src ="images/facebook.svg" />
-            <img class="social-icons" id="header-twitter-icon"src = "images/Twitter.svg"/>
+            <div class="header-column header-column-2">
+                <div class="social-icons-container">
+                    <img class="header-item social-icons" id="header-facebook-icon" src="images/facebook.svg" alt="Facebook Logo" />
+                    <img class="header-item social-icons" id="header-twitter-icon" src="images/Twitter.svg" alt="Twitter Logo" />
+                </div>
+                <!--Social Media Icons-->
+                
 
-            <!--Navigation bar-->
-            <nav id = "nav-bar">
-                    <li class="nav-items">Home</li>
-                    <li class="nav-items">About us</li>
-                    <li class="nav-items">Portfolio</li>
-                    <li class="nav-items">Services</li>
-                    <li class="nav-items">Contact</li>
-            </nav>
+                <!--Navigation bar-->
+                <nav class="header-item" id ="nav-bar">
+                        <li class="heaver-item nav-item"><a href="index.html">Home</a></li>
+                        <li class="header-item nav-item"><a href="about.html">About Us</a></li>
+                        <li class="header-item nav-item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="header-item nav-item"><a href="services.html">Services</a></li>
+                        <li class="header-item nav-item"><a href="contact.html">Contact</a></li>
+                </nav>
+            </div>
+
         </header>
+
         <!--Webpage Content-->
-        <section>
+        <section class="page-title">
             <h1>Portfolio</h1>
         </section>
 
-        <section>
-            <div>
-                <img src="images/icon.png" />
-                <div>
+        <section class="portfolio">
+            <div class="portfolio-container">
+                <div class="portfolio-column">
+                    <img src="images/icon.png" />
+                </div>
+                <div class="portfolio-column portfolio-description">
                     <h4>Project Name</h4>
-                
                     <p> 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
@@ -47,12 +58,13 @@
             </div>
         </section>
 
-        <section>
-            <div>
-                <img src="images/icon.png" />
-                <div>
+        <section class="portfolio">
+            <div class="portfolio-container">
+                <div class="portfolio-column">
+                    <img src="images/icon.png" />
+                </div>
+                <div class="portfolio-column portfolio-description">
                     <h4>Project Name</h4>
-                
                     <p> 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
@@ -64,12 +76,13 @@
             </div>
         </section>
 
-        <section>
-            <div>
-                <img src="images/icon.png" />
-                <div>
+        <section class="portfolio">
+            <div class="portfolio-container">
+                <div class="portfolio-column">
+                    <img src="images/icon.png" />
+                </div>
+                <div class="portfolio-column portfolio-description">
                     <h4>Project Name</h4>
-                
                     <p> 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
@@ -82,16 +95,17 @@
         </section>
         
 
-
-
-
-
         <!--Footer of the website-->
-        <footer>
-            <p>Contact Details</p>
-            <img class="social-icons" id="footer-facebook-icon" src ="images/facebook.svg"/>
-            <img class="social-icons" id="footer-twitter-icon"src = "images/Twitter.svg"/>
-            <p>Copyrights. All rights reserved. Made by Lanre Sodeinde. 2021</p>
+        <footer class="footer">
+            <div class="footer-row">
+                <p>Contact Details</p>
+                <img class="social-icons footer-facebook-icon" src ="images/facebook.svg"/>
+                <img class="social-icons footer-twitter-icon"src = "images/Twitter.svg"/>
+            </div>
+            <div class="footer-row">
+                <p>Copyrights. All rights reserved. Made by Lanre Sodeinde. 2021</p>
+            </div>
+            
         </footer>
     </body>
 </html>

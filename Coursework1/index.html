@@ -1,52 +1,100 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <html lang="en"/>
         <meta charset="UTF-8" />
         <title>Coursework 1 Website</title>
-        <link rel="stylesheet" href="./stylesheet.css"/>
+        <link rel="stylesheet" href="./styles.css"/>
     </head>
-
     <body >
         <!--Header of the website-->
-        <header id="home-banner">
+        <header class="header">
+            <div class="header-column header-column-2">
                 <!--Logo-->
-            <img id="site-logo" src="images/logo.png" />
+                <img class="header-item" id="site-logo" src="images/logo.png" />
+            </div>
 
-            <!--Social Media Icons-->
-            <img class="social-icons" id="facebook-icon" src ="images/facebook.svg" />
-            <img class="social-icons" id="twitter-icon"src = "images/Twitter.svg"/>
+            <div class="header-column header-column-2">
+                <div class="social-icons-container">
+                    <img class="header-item social-icons" id="header-facebook-icon" src="images/facebook.svg" alt="Facebook Logo" />
+                    <img class="header-item social-icons" id="header-twitter-icon" src="images/Twitter.svg" alt="Twitter Logo" />
+                </div>
+                <!--Social Media Icons-->
+                
 
-            <!--Navigation bar-->
-            <nav id = "nav-bar">
-                    <li class="nav-items">Home</li>
-                    <li class="nav-items">About us</li>
-                    <li class="nav-items">Portfolio</li>
-                    <li class="nav-items">Services</li>
-                    <li class="nav-items">Contact</li>
-            </nav>
+                <!--Navigation bar-->
+                <nav class="header-item" id ="nav-bar">
+                        <li class="heaver-item nav-item"><a href="index.html">Home</a></li>
+                        <li class="header-item nav-item"><a href="about.html">About Us</a></li>
+                        <li class="header-item nav-item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="header-item nav-item"><a href="services.html">Services</a></li>
+                        <li class="header-item nav-item"><a href="contact.html">Contact</a></li>
+                </nav>
+            </div>
+
         </header>
-        <section id = "home-section-1" >
-            <h1> Welcome to my website</h1>
-            <!--Image on the side-->
-            <img id="main-image" src="images/logo.png" />
-            <button class="button" id="main-call-to-action"  >Find out more</button>
+
+        <!--Website Content-->
+        <section class="home-section-1">
+            <div class="home-section-1-column home-section-1-column-1">
+                <div class="section-1-content">
+                    <h1> Welcome to my website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure at nostrum magnam tenetur, 
+                        suscipit dolorum ipsam quos voluptates rem aliquam debitis doloremque blanditiis eligendi 
+                        ab earum explicabo. Animi, magni.</p>
+    
+                    
+                    <button class="button" id="main-call-to-action-button"  >Find out more</button>
+                </div>
+                
+            </div>
+            <div class="home-section-1-column home-section-1-column-2">
+                <!--Image on the side-->
+                <img id="main-image" src="images/logo.png" />
+            </div>
         </section>
-        <section id= "home-section-2">
+
+        <section class= "home-section-2">
+            <img class="icon home-section-2-icon" src="images/icon.png" />
+            <img src="images/icon.png" />
+            <img src="images/icon.png" />
 
         </section>
-        <section id="home-section-3">
-            <div class="services-box"></div>
-            <div class="services-box"></div>
-            <div class="services-box"></div>
-            <button class="button"> See More Services</button>
+        <section class="home-section-3">
+            <div class="home-section-3-row home-section-3-row-1">
+                <h1>Services</h1>
+            </div>
+            <div class="home-section-3-row home-section-3-row-2">            
+                <div class="services-box">
+                    <h4>Service 1</h4>
+                    <p> This is going to be description of the content</p>
+
+                </div>
+                <div class="services-box">
+                    <h4>Service 2</h4>
+                    <p> This is going to be description of the content</p>
+                </div>
+                <div class="services-box">
+                    <h4>Service 3</h4>
+                    <p> This is going to be description of the content</p>
+
+                </div>
+            </div>
+            <div class="home-section-3-row home-section-3-row-3">
+                <button class="button"> See More Services</button>
+            </div>
         </section>
         <!--Footer of the website-->
-        <footer>
-            <p>Contact Details</p>
-            <img class="social-icons" id="facebook-icon" src ="images/facebook.svg"/>
-            <img class="social-icons" id="twitter-icon"src = "images/Twitter.svg"/>
-            <p>Copyrights. All rights reserved. Made by Lanre Sodeinde. 2021</p>
-
+        <footer class="footer">
+            <div class="footer-row">
+                <p>Contact Details</p>
+                <img class="social-icons footer-facebook-icon" src ="images/facebook.svg"/>
+                <img class="social-icons footer-twitter-icon"src = "images/Twitter.svg"/>
+            </div>
+            <div class="footer-row">
+                <p>Copyrights. All rights reserved. Made by Lanre Sodeinde. 2021</p>
+            </div>
+            
         </footer>
     </body>
 </html>

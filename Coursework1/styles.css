@@ -1,0 +1,376 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Global Styles */
+
+body{
+    font-family: Avenir, Helvetica;
+    font-weight: normal;
+}
+
+.button{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px gray solid;
+}
+
+.page-title{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+
+
+
+/* STYLES FOR HEADER PAGE*/
+
+.header {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: rgb(199, 199, 199);
+}
+
+.header-column{
+    border: 1px solid red; /* For Debugging Purposes*/
+
+    width: 50%;
+    
+}
+
+#site-logo{
+    margin-left: 10%;
+    width:50px;
+}
+
+.social-icons-container{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+    height: 20px;
+}
+
+#header-twitter-icon{
+    margin-left: 10px;
+}
+
+#nav-bar{
+    border: 1px solid red; /* For Debugging Purposes*/
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; 
+}
+
+/* Styles for Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-twitter-icon{
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+/* STYLES FOR HOME PAGE */
+
+
+/* Styles for section 1 */
+
+.home-section-1{
+    border: 1px solid blue; /* For Debugging Purposes*/
+    display: flex;
+    height: 350px;
+}
+
+.home-section-1-column{
+    border: 1px solid blue; /* For Debugging Purposes*/
+
+    display: flex;
+    width: 50%;
+}
+
+.home-section-1-column-1{
+    display: flex;
+
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border: 1px dashed blue; /* For Debugging Purposes*/
+    width: 90%;
+    height: 70%;    
+}
+
+.section-1-content p{
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+#main-call-to-action-button{
+    width: 60%;
+    height: 40px;
+
+}
+
+
+.home-section-1-column-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+#main-image{
+    height: 300px;
+}
+
+
+/* Styles for Section 2*/
+
+.home-section-2{
+
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(194, 194, 194);
+    padding: 30px;
+}
+
+
+/* Styles for Section 3 */
+
+.home-section-3{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+
+}
+.home-section-3-row-1{
+    display: flex;
+    justify-content: center;
+}
+
+.home-section-3-row-2{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.home-section-3-row-3{
+    display: flex;
+    justify-content: center;
+}
+
+.services-box{
+    height: 200px;
+    width:200px;
+    background-color: pink;
+    border: 1px black solid;
+}
+
+.services-box h4,
+.services-box p {
+    text-align: center;
+
+}
+
+
+
+
+
+/* STYLES FOR ABOUT PAGE*/
+
+.about-section-2,
+.about-section-4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-section-2 p,
+.about-section-4 p{
+    width: 900px;
+}
+
+.about-section-3{
+    display: flex;
+    justify-content: center;
+
+    background-color: gray;
+    padding: 20px;
+}
+
+
+
+/* STYLES FOR PORTFOLIO PAGE */
+
+.portfolio{
+    background-color: rgb(197, 197, 197);
+    margin: 0px 30px 30px 30px;
+    padding: 10px;
+}
+
+.portfolio-container{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.portfolio-column{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.portfolio-description{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/*STYLES FOR SERVICES PAGE */
+
+.services-section-1,
+.services-section-3{
+    display: flex;
+}
+
+.services-section-1-column,
+.services-section-3-column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    background-color: gray;
+    margin: 20px;
+    padding: 30px;
+
+}
+
+.services-section-1-column-row,
+.services-section-3-column-row{
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+}
+
+.services-section-2-column{
+    display: flex;
+    flex-direction: row;
+
+    background-color: gray;
+    margin: 20px;
+    padding: 30px;
+
+}
+
+.services-section-2-column-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* STYLES FOR CONTACT PAGE */
+
+.contact-section-1{
+    display: flex;
+}
+
+.contact-section-1-column{
+    width: 50%;
+    padding: 20px;
+}
+
+.enquiries h4,
+.enquiries p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input{
+    width: 90%;
+    height: 25px;
+}
+
+select{
+    width: 90%;
+    height: 25px;
+
+}
+
+.contact-submit-button{
+    width: 90%
+}
+
+textarea{
+    width: 90%;
+    font-family: inherit;
+    height: 100px;
+}
+
+.contact-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: gray;
+    margin: 10px;
+    height: 200px;
+    text-align: center;
+}
+
+.social-media-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: gray;
+    margin: 10px;
+    height: 150px;
+    text-align: center;
+}
