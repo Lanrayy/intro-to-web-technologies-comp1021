@@ -8,24 +8,39 @@
 /* Global Styles */
 
 body{
-    font-family: Avenir, Helvetica;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
     font-weight: normal;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: Alfa Slab One, Roboto Slab;
+}
+
+p{
+    font-family: Avenir;
+    line-height: 28px;
+}
+
 .button{
-    width: 100px;
+    width: 200px;
     height: 40px;
     border-radius: 30px;
     border: 1px gray solid;
+    background-color: #FAC500;
+    font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
 .page-title{
+    font-family: Alfa Slab One, Roboto;
     display: flex;
     justify-content: center;
-    height: 100px;
-    align-items: center;
-}
 
+    height: 150px;
+    align-items: center;
+    font-size: 40px;
+    background-color: #00256B;
+    color: white;
+}
 
 
 
@@ -34,20 +49,21 @@ body{
 .header {
     display: flex;
     justify-content: space-around;
+    background-color:   #00256B;
+    height: 60px;
 
-    background-color: rgb(199, 199, 199);
 }
 
 .header-column{
-    border: 1px solid red; /* For Debugging Purposes*/
-
+    /*border: 1px solid red;*/ /* For Debugging Purposes*/
     width: 50%;
     
 }
 
 #site-logo{
+    margin-top: 20px;
     margin-left: 10%;
-    width:50px;
+    width: 50px;
 }
 
 .social-icons-container{
@@ -64,12 +80,24 @@ body{
 }
 
 #nav-bar{
-    border: 1px solid red; /* For Debugging Purposes*/
-
     list-style-type: none;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
+    height: 30px;
+    margin: 20px;
+
 }
+
+.nav-item{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    color: #FAC500;
+}
+
+
 
 /* Styles for Footer*/
 
@@ -89,29 +117,31 @@ footer {
 
 
 
-
-
-
-
-
-
 /* STYLES FOR HOME PAGE */
 
 
 /* Styles for section 1 */
 
 .home-section-1{
-    border: 1px solid blue; /* For Debugging Purposes*/
+    /*border: 1px solid blue;*/ /* For Debugging Purposes*/
     display: flex;
-    height: 350px;
+    height: 580px;
+    background-color:  #00256B;
 }
 
-.home-section-1-column{
-    border: 1px solid blue; /* For Debugging Purposes*/
+.home-section-1-column-1{
+    /*border: 1px solid blue;*/ /* For Debugging Purposes*/
 
     display: flex;
-    width: 50%;
+    width: 55%;
 }
+.home-section-1-column-2{
+    /*border: 1px solid blue;*/ /* For Debugging Purposes*/
+
+    display: flex;
+    width: 45%;
+}
+
 
 .home-section-1-column-1{
     display: flex;
@@ -119,37 +149,65 @@ footer {
     text-align: left;
     justify-content: center;
     align-items: center;
-
 }
 
 .section-1-content{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
 
-    border: 1px dashed blue; /* For Debugging Purposes*/
+    /*border: 1px dashed blue;*//* For Debugging Purposes*/
     width: 90%;
-    height: 70%;    
+    height: 70%;
+    margin-left: 90px;    
 }
+
+
+.section-1-content h1{
+    font-size: 50px;
+    font-family: Alfa Slab One;
+    color:white;
+}
+
 
 .section-1-content p{
-    margin-top: 10px;
-    margin-bottom: auto;
+    width: 95%;
+    font-family: Avenir;
+    font-size: 20px;
+    color: #E7E6E6;
+    line-height: 34px;
 }
+
+#home-section-1-subtitle{
+    font-size: 32px;
+    color: #FAC500;
+    margin-top:5px;
+}
+
+#home-section-1-description{
+    margin-top: 50px;
+}
+
+
+
 
 #main-call-to-action-button{
     width: 60%;
-    height: 40px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: #FAC500;
+
+    margin-top: 80px;
+    color: white;
+    font-size: 20px;
 
 }
-
 
 .home-section-1-column-2{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 
 
@@ -162,11 +220,17 @@ footer {
 /* Styles for Section 2*/
 
 .home-section-2{
-
     display: flex;
-    justify-content: space-around;
-    background-color: rgb(194, 194, 194);
+    justify-content: center;
+
+    background-color: #E7E6E6;
     padding: 30px;
+    height: 170px;
+}
+
+.icon{
+    width: 100px;
+    margin: 0px 100px;
 }
 
 
@@ -187,6 +251,7 @@ footer {
 .home-section-3-row-2{
     display: flex;
     justify-content: space-around;
+    margin: 20px;
 
 }
 
@@ -194,11 +259,15 @@ footer {
     display: flex;
     justify-content: center;
 }
-
+#home-section-3-title{
+    font-size: 40px;
+    margin: 20px;
+}
 .services-box{
-    height: 200px;
-    width:200px;
-    background-color: pink;
+    height: 300px;
+    width:300px;
+    padding: 10px;
+    background-color:#E7E6E6;
     border: 1px black solid;
 }
 
@@ -208,30 +277,67 @@ footer {
 
 }
 
+.services-box h4{
+    margin: 20px;
+    font-size: 28px;
+}
+
+.services-box p{
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+#home-section-3-services-button{
+    margin: 30px;
+
+    width: 300px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: #FAC500;
+
+    color: white;
+    font-size: 18px;
+}
+
+#home-section-3-services-button:hover{
+
+    border: 2px solid #FAC500;
+    background-color:rgb(175, 175, 175);
+    color: #00256B;;
+
+}
+
 
 
 
 
 /* STYLES FOR ABOUT PAGE*/
 
+
+
 .about-section-2,
 .about-section-4{
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
+
+    height: 250px;
 }
 
 .about-section-2 p,
 .about-section-4 p{
-    width: 900px;
+    width: 850px;
+    color: #00256B;
 }
 
 .about-section-3{
     display: flex;
     justify-content: center;
 
-    background-color: gray;
+    background-color: #E7E6E6;
     padding: 20px;
+    height: 200px;
 }
 
 
@@ -239,22 +345,40 @@ footer {
 /* STYLES FOR PORTFOLIO PAGE */
 
 .portfolio{
+    display: flex;
+    justify-content: center;
     background-color: rgb(197, 197, 197);
     margin: 0px 30px 30px 30px;
     padding: 10px;
+    height: 250px;
 }
 
 .portfolio-container{
     display: flex;
     flex-direction: row;
+    width: 1000px;
+    border: 1px solid black;
+    
+}
 
-
+.portfolio-image{
+    width: 300px;
+    height: 150px;
 }
 
 .portfolio-column{
     display: flex;
     justify-content: center;
     width: 50%;
+}
+
+.portfolio-column p{
+    width: 80%;
+}
+
+.project-title{
+    font-size: 30px;
+    text-align: center;
 }
 
 .portfolio-description{
@@ -318,28 +442,44 @@ footer {
     width: 50%;
     padding: 20px;
 }
-
-.enquiries h4,
-.enquiries p{
+.enquiries{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    
+}
+.enquiries p{
+    text-align: centre;
+
+
+}
+
+.enquiries h4{
+    font-size: 34px;
+    text-align: center;
 }
 
 form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin: 20px;
 }
 
 input{
+    margin: 10px 0px;
     width: 90%;
-    height: 25px;
+    height: 29px;
+    border-radius: 5px;
+    border: 1px solid #E7E6E6;
 }
 
 select{
+    margin: 10px 0px;
     width: 90%;
-    height: 25px;
+    height: 29px;
+    border-radius: 5px;
+    border: 1px solid #E7E6E6;
 
 }
 
@@ -351,17 +491,26 @@ textarea{
     width: 90%;
     font-family: inherit;
     height: 100px;
+    border-radius: 5px;
+    border: 1px solid #E7E6E6;
+
 }
 
 .contact-details-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
-    background-color: gray;
+    background-color: #E7E6E6;
     margin: 10px;
     height: 200px;
+    width: 500px;
     text-align: center;
+}
+
+.contact-details-container p {
+    width: 90%;
 }
 
 .social-media-container{
@@ -369,8 +518,9 @@ textarea{
     flex-direction: column;
     justify-content: center;
 
-    background-color: gray;
+    background-color: #E7E6E6;
     margin: 10px;
-    height: 150px;
+    height: 200px;
+    width: 500px;
     text-align: center;
 }

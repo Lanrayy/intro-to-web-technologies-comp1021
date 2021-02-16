@@ -5,6 +5,8 @@
         <meta charset="UTF-8" />
         <title>Coursework 1 Website</title>
         <link rel="stylesheet" href="./styles.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     </head>
     <body >
         <!--Header of the website-->
@@ -24,11 +26,11 @@
 
                 <!--Navigation bar-->
                 <nav class="header-item" id ="nav-bar">
-                        <li class="heaver-item nav-item"><a href="index.html">Home</a></li>
-                        <li class="header-item nav-item"><a href="about.html">About Us</a></li>
-                        <li class="header-item nav-item"><a href="portfolio.html">Portfolio</a></li>
-                        <li class="header-item nav-item"><a href="services.html">Services</a></li>
-                        <li class="header-item nav-item"><a href="contact.html">Contact</a></li>
+                        <li class="header-item nav-item"><a class = "nav-item" href="index.html">Home</a></li>
+                        <li class="header-item nav-item"><a class = "nav-item"href="about.html">About Us</a></li>
+                        <li class="header-item nav-item"><a class = "nav-item"href="portfolio.html">Portfolio</a></li>
+                        <li class="header-item nav-item"><a class = "nav-item"href="services.html">Services</a></li>
+                        <li class="header-item nav-item"><a class = "nav-item"href="contact.html">Contact</a></li>
                 </nav>
             </div>
 
@@ -38,13 +40,14 @@
         <section class="home-section-1">
             <div class="home-section-1-column home-section-1-column-1">
                 <div class="section-1-content">
-                    <h1> Welcome to my website</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure at nostrum magnam tenetur, 
-                        suscipit dolorum ipsam quos voluptates rem aliquam debitis doloremque blanditiis eligendi 
-                        ab earum explicabo. Animi, magni.</p>
+                    <h1> Welcome</h1>
+                    <p id="home-section-1-subtitle">Design . Inspire . Innovate</p>
+                    <p id="home-section-1-description">I create beautiful designs such as website, 
+                        graphics business cards. <br> 
+                        Upgrade your business today.</p>
     
                     
-                    <button class="button" id="main-call-to-action-button"  >Find out more</button>
+                    <button class="button" id="main-call-to-action-button">Lets make it happen</button>
                 </div>
                 
             </div>
@@ -55,33 +58,41 @@
         </section>
 
         <section class= "home-section-2">
-            <img class="icon home-section-2-icon" src="images/icon.png" />
-            <img src="images/icon.png" />
-            <img src="images/icon.png" />
+            <img class="icon home-section-2-icon" src="images/diagram.svg" alt="Image of upward graph" />
+            <img class="icon home-section-2-icon" src="images/lamp.svg" />
+            <img class="icon home-section-2-icon" src="images/measuring.svg" />
 
         </section>
         <section class="home-section-3">
             <div class="home-section-3-row home-section-3-row-1">
-                <h1>Services</h1>
+                <h1 id="home-section-3-title">Services</h1>
             </div>
             <div class="home-section-3-row home-section-3-row-2">            
                 <div class="services-box">
-                    <h4>Service 1</h4>
-                    <p> This is going to be description of the content</p>
+                    <h4>Websites</h4>
+                    <p> I will design and build a beautiful website. 
+                        I will work with you from the inception till the end of the project.
+                    Everything will be designed around your business</p>
 
                 </div>
                 <div class="services-box">
-                    <h4>Service 2</h4>
-                    <p> This is going to be description of the content</p>
+                    <h4>Business Cards</h4>
+                    <p> Your business card is often the first way potential clients interact with your business.
+                        First impressions make all the difference, and you don't want yours to be a crappy business card.
+                    </p>
                 </div>
                 <div class="services-box">
-                    <h4>Service 3</h4>
-                    <p> This is going to be description of the content</p>
+                    <h4>Logos</h4>
+                    <p> Apple. Google. McDonald's. <br>
+                        Need I say more?<br>
+                         Your logo will define your business for years to come. <br>
+                         Make it a special one.
+                    </p>
 
                 </div>
             </div>
             <div class="home-section-3-row home-section-3-row-3">
-                <button class="button"> See More Services</button>
+                <button class="button" id="home-section-3-services-button"> Upgrage your business today</button>
             </div>
         </section>
         <!--Footer of the website-->
