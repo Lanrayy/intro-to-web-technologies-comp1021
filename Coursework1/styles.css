@@ -97,6 +97,10 @@ p{
     color: #FAC500;
 }
 
+.nav-item:focus{
+    color: #FAC500;
+}
+
 
 
 /* Styles for Footer*/
