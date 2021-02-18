@@ -13,29 +13,39 @@
 
         <!--Header of the website-->
         <header class="header">
-            <div class="header-column header-column-2">
+            <div class="header-column header-column-1">
                 <!--Logo-->
-                <img class="header-item" id="site-logo" src="images/logo.png" />
+                <a href="index.html">
+                <img class="header-item" id="site-logo" src="images/site-logo.png" alt="Website Logo"/>
+                </a>
             </div>
 
             <div class="header-column header-column-2">
                 <div class="social-icons-container">
-                    <img class="header-item social-icons" id="header-facebook-icon" src="images/facebook.svg" alt="Facebook Logo" />
-                    <img class="header-item social-icons" id="header-twitter-icon" src="images/Twitter.svg" alt="Twitter Logo" />
+                    <img class="header-item social-icons" id="header-facebook-icon" src="images/facebook.svg" alt="Image of Facebook Logo" />
+                    <img class="header-item social-icons" id="header-twitter-icon" src="images/Twitter.svg" alt="Image of Twitter Logo" />
                 </div>
                 <!--Social Media Icons-->
                 
-
                 <!--Navigation bar-->
-                <nav class="header-item" id ="nav-bar">
-                        <li class="header-item nav-item"><a class = "nav-item" href="index.html">Home</a></li>
-                        <li class="header-item nav-item"><a class = "nav-item"href="about.html">About Us</a></li>
-                        <li class="header-item nav-item"><a class = "nav-item"href="portfolio.html">Portfolio</a></li>
-                        <li class="header-item nav-item"><a class = "nav-item"href="services.html">Services</a></li>
-                        <li class="header-item nav-item"><a class = "nav-item"href="contact.html">Contact</a></li>
-                </nav>
-            </div>
 
+                <nav class="header-item" id ="nav-bar">
+                    <li class="header-item nav-item"> <a href= "index.html"     class="nav-item">Home</a> </li>
+                    <li class="header-item nav-item"> <a href= "about.html"     class="nav-item">About Us</a> </li>
+                    <li class="header-item nav-item"> <a href= "portfolio.html" class="nav-item">Portfolio</a> </li>
+                    <li class="header-item nav-item"> <a href= "services.html"  class="nav-item">Services</a> </li>
+                    <li class="header-item nav-item"> <a href= "contact.html"   class="nav-item">Contact</a> </li>
+                </nav>
+                <!-- 
+                <nav class="header-item" id ="nav-bar">
+                    <li class="header-item nav-item"><a class = "nav-item" href="index.html">Home</a></li>
+                    <li class="header-item nav-item"><a class = "nav-item"href="about.html">About Us</a></li>
+                    <li class="header-item nav-item"><a class = "nav-item"href="portfolio.html">Portfolio</a></li>
+                    <li class="header-item nav-item"><a class = "nav-item"href="services.html">Services</a></li>
+                    <li class="header-item nav-item"><a class = "nav-item"href="contact.html">Contact</a></li>
+            </nav>
+        -->
+            </div>
         </header>
 
 
@@ -43,58 +53,59 @@
         <section class="page-title">
             <h3>Contact</h3>
         </section>
-        <section class="contact-section-1">
-            <div class="contact-section-1-column enquiries">
-                <h4>Enquiries</h4>
-                <p>Use the contact form to get in touch with me</p>
-                <form>
-                    <label>Full Name
-                        <input type="text"/>
-                    </label>
-                    <label>Email Address
-                        <input type= "text"/>
-                    </label>
-                    <label> What services are you enquiring about?
-                    <select>
-                        <option>Logo Design</option>
-                        <option>Business Card</option>
-                        <option>Website Design</option>
-                        <option>Flyer Design</option>
-                        <option>Banner Design</option>
-                    </select>
-                    </label>
-                    <label> Message
-                        <textarea>Write your message here...</textarea>
-                    </label>
-                    <label>
-                        <input class="button contact-submit-button" type="submit"/>
-                    </label>
-                </form>
-            </div>
-            <div class="contact-section-1-column">
-                <div class="contact-details-container">
-                    <h4>Contact Details</h4>
-                    <p> Please get in touch with me using using the contact form to the left. <br> 
-                        Alternatively you can use the social media links below</p>
-                </div>
-                <div class="social-media-container">
-                    <h4>Social Media</h4>
-                    <img class="social-icons" id="contact-facebook-icon" src ="images/facebook.svg" />
-                    <img class="social-icons" id="contact-twitter-icon"src = "images/Twitter.svg"/>
-                </div>
-     
 
+        <section class="contact-section">
+            <div class="contact-section-container">
+                <div class="contact-section-1-column enquiries">
+                    <h4>Enquiries</h4>
+                    <p>Use the contact form to get in touch with me</p>
+                    <form>
+                        <label>Full Name
+                            <input placeholder="Please enter your full name.." type="text"/>
+                        </label>
+                        <label>Email Address
+                            <input placeholder="Enter your email address..." type= "text"/>
+                        </label>
+                        <label> What services are you enquiring about?
+                        <select placeholder="Please pick a value...">
+                            <option>Logo Design</option>
+                            <option>Business Card</option>
+                            <option>Website Design</option>
+                            <option>Flyer Design</option>
+                            <option>Banner Design</option>
+                        </select>
+                        </label>
+                        <label> Message
+                            <textarea maxwidth="600" placeholder="Write your message here..."></textarea>
+                        </label>
+                        <label>
+                            <input class="button contact-submit-button" type="submit"/>
+                        </label>
+                    </form>
+                </div>
+                <div class="contact-section-1-column">
+                    <div class="contact-details-container">
+                        <h4>Contact Details</h4>
+                        <p> Please get in touch with me using using the contact form to the left. <br> 
+                            Alternatively you can use the social media links below</p>
+                    </div>
+                    <div class="social-media-container">
+                        <h4>Social Media</h4>
+                        <img class="social-icons" id="contact-facebook-icon" src ="images/facebook.svg" alt="Image of Facebook Logo"/>
+                        <img class="social-icons" id="contact-twitter-icon" src="images/Twitter.svg" alt="Image of Twitter Logo"/>
+                    </div>
+                </div>
             </div>
-
 
         </section>
+
 
         <!--Footer of the website-->
         <footer class="footer">
             <div class="footer-row">
                 <p>Contact Details</p>
-                <img class="social-icons footer-facebook-icon" src ="images/facebook.svg"/>
-                <img class="social-icons footer-twitter-icon"src = "images/Twitter.svg"/>
+                <img class="social-icons footer-facebook-icon" src ="images/facebook.svg" alt="Image of Facebook Logo"/>
+                <img class="social-icons footer-twitter-icon" src="images/Twitter.svg" alt="Image of Twitter Logo"/>
             </div>
             <div class="footer-row">
                 <p>Copyrights. All rights reserved. Made by Lanre Sodeinde. 2021</p>
