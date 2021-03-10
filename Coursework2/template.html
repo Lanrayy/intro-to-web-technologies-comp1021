@@ -3,42 +3,77 @@
     <head>
         <meta charset="UTF-8" />
         <title>Coursework 1 Website</title>
-        <link rel="stylesheet" href="./stylesheet.css"/>
+        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="template.css" />
+        <script src="scripts/jquery.js"></script>
+        <!--<script src="scripts/script.js"></script> -->
+        <script src="template.js"></script>
+    
+        
     </head>
 
     <body >
-        <!--Header of the website-->
-        <header id="home-banner">
+        <header class="header">
+            <div class="header-column header-column-1">
                 <!--Logo-->
-            <img id="site-logo" src="images/logo.png" />
+                <a href="index.html">
+                <img class="header-item" id="site-logo" src="images/site-logo.png" alt="Website Logo" />
+                </a>
+            </div>
 
-            <!--Social Media Icons-->
-            <img class="social-icons" id="header-facebook-icon" src ="images/facebook.svg" />
-            <img class="social-icons" id="header-twitter-icon"src = "images/Twitter.svg"/>
+            <div class="header-column header-column-2">
+                <div class="social-icons-container">
+                    <img class="header-item social-icons" id="header-facebook-icon" src="images/facebook.svg" alt="Facebook Logo" />
+                    <img class="header-item social-icons" id="header-twitter-icon" src="images/Twitter.svg" alt="Twitter Logo" />
+                </div>
+                <!--Social Media Icons-->
+            
+                <!--Navigation bar-->
+                <nav class="header-item" id ="nav-bar">
+                    <li class="header-item nav-item" ><a id = "template" href= "template.html" class="nav-item active">Template</a> </li>
+                    <li id = "about" class="header-item nav-item"> <a href= "about.html" class="nav-item">About</a> </li>
+                    <li id = "portfolio" class="header-item nav-item"> <a href= "portfolio.html" class="nav-item">Portfolio</a> </li>
+                    <li id = "services" class="header-item nav-item"> <a href= "services.html" class="nav-item">Services</a> </li>
+                    <li id = "contact" class="header-item nav-item"> <a href= "contact.html" class="nav-item">Contact</a> </li>
+                </nav>
 
-            <!--Navigation bar-->
-            <nav id = "nav-bar">
-                    <li class="nav-items">Home</li>
-                    <li class="nav-items">About us</li>
-                    <li class="nav-items">Portfolio</li>
-                    <li class="nav-items">Services</li>
-                    <li class="nav-items">Contact</li>
-            </nav>
+            </div>
+
+   
+
         </header>
-        <!--Webpage content-->
 
         
+        <a href="#"><div id="test-div-1" style="width: 200px; height: 200px; background-color: blue; margin: auto"></div></a>
+        <button id="button">Button</button>
+
+
         
+        <li style="text-decoration: none; color: blue; list-style: none; color: pink" id="test-nav-1"><a style="text-decoration: none" href="#">Test1</a></li>
+        <li style="text-decoration: none; color: blue; list-style: none; color: pink" id="test-nav-2"><a style="text-decoration: none" href="#">Test2</a></li>
+        <li style="text-decoration: none; color: blue; list-style: none; color: pink" id="test-nav-3"><a style="text-decoration: none" href="#">Test3</a></li>
+        
+        
+        <!-- TEXTS-->
+
+        <p id="storage"> Y</p>
 
 
 
-
-
+        <!-- PRIVACY NOTICE-->
+        <div class="privacy-notice-container"> 
+            <p>We use cookies on our website to see how you interact with it. By accepting, you agree to our use of such cookies.</p>
+            <button class="accept-button" > Accept</button>
+            <a href="#"><img id="close-button" src="images/close.svg"/></a>
+        </div>
+        
         <!--Footer of the website-->
         <footer>
             <p>Contact Details</p>
             <img class="social-icons" id="footer-facebook-icon" src ="images/facebook.svg"/>
-            <img class="social-icons" id="footer-twitter-icon"src = "images/Twitter.svg"/>
+            <img class="social-icons" id="footer-twitter-icon" src = "images/Twitter.svg"/>
             <p>Copyrights. All rights reserved. Made by Lanre Sodeinde. 2021</p>
         </footer>
     </body>

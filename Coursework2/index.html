@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html manifest="saved.appcache">
     <head>
         <html lang="en"/>
         <meta charset="UTF-8" />
-        <title>COMP1021 Coursework 1</title>
+        <title>COMP1021 Coursework 2</title>
         <link rel="stylesheet" href="./styles.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/script.js"></script>
     </head>
     <body >
          <!--Header of the website-->
@@ -27,11 +29,11 @@
             
                 <!--Navigation bar-->
                 <nav class="header-item" id ="nav-bar">
-                    <li class="header-item nav-item"> <a href= "index.html" class="nav-item">Home</a> </li>
-                    <li class="header-item nav-item"> <a href= "about.html" class="nav-item">About</a> </li>
-                    <li class="header-item nav-item"> <a href= "portfolio.html" class="nav-item">Portfolio</a> </li>
-                    <li class="header-item nav-item"> <a href= "services.html" class="nav-item">Services</a> </li>
-                    <li class="header-item nav-item"> <a href= "contact.html" class="nav-item">Contact</a> </li>
+                    <li class="header-item"> <a href= "index.html" class="nav-item active">Home</a> </li>
+                    <li class="header-item"> <a href= "about.html" class="nav-item">About</a> </li>
+                    <li class="header-item"> <a href= "portfolio.html" class="nav-item">Portfolio</a> </li>
+                    <li class="header-item"> <a href= "services.html" class="nav-item">Services</a> </li>
+                    <li class="header-item"> <a href= "contact.html" class="nav-item">Contact</a> </li>
                 </nav>
 
             </div>
@@ -102,6 +104,20 @@
                 </a>
             </div>
         </section>
+
+        <!--Privacy Notice-->
+        <section class="privacy-notice">
+            <div class="privacy-notice-container"> 
+                <p>We use cookies on our website to see how you interact with it. By accepting, you agree to our use of such cookies.</p>
+                <div>
+                    <button class="accept-button" > Accept</button>
+                    <a href="#"><img id="close-button" src="images/close.svg"/></a>
+                </div>
+                
+            </div>
+        </section>
+        
+
         <!--Footer of the website-->
         <footer class="footer">
             <div class="footer-row">
