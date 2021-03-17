@@ -73,10 +73,10 @@ $(function(){
        Id = $(this).attr("id");
        //alert("#project-title-"+Id);
         $("#overlay"+Id).fadeIn(200);
-        $("#overlay"+Id).css({"width":"520px", "height":"370px"})
+        $("#overlay"+Id).css({"width":"530px", "height":"380px"})
         $("#project-title-"+Id).css({"text-decoration":"underline", "font-size":"32px"});
         $("#project-description-"+Id).css({"font-size":"18.5px"});
-        $("#project-image-"+Id).css({"width":"520px", "height":"370px"})
+        $("#project-image-"+Id).css({"width":"530px", "height":"380px"});
     });
 
     $(".project-container").on("mouseleave", function(){
@@ -85,10 +85,9 @@ $(function(){
         $(".project-title").css({"text-decoration":"none", "font-size":"30px"});
         $(".project-description").css({"text-decoration":"none", "font-size":"18px"});
         $(".project-image").css({"width":"500px", "height":"350px"});
-        $("#overlay"+Id).css({"width":"500px", "height":"350px"})
+        $("#overlay"+Id).css({"width":"500px", "height":"350px"});
 
     })
-
 
 
 
@@ -100,7 +99,7 @@ $(function(){
         //alert(servId);
         $("#service-header-"+servId).css({"font-size":"22px"});
         $("#service-description-"+servId).css({"font-size":"18px"});
-        $("#"+servId).css({"height":"320px", "width":"570px"});
+        $("#"+servId).css({"height":"340px", "width":"590px"});
     })
 
     $(".service").on("mouseleave", function(){
