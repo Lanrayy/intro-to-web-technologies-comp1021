@@ -504,7 +504,10 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 10px;
+}
+
+.click-to-view-more{
+    margin-bottom: 10px;
 }
 
 .services-section-1-column
@@ -535,6 +538,83 @@ p{
 }
 
 
+/* POP OUT HEADER */
+.pop-out-container{
+    position: relative;
+}
+
+.services-pop-out{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 550px;
+    height: 430px;
+    background-color: #E7E6E6;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#pop-out-header{
+    font-size: 26px;
+}
+
+#pop-out-description{
+    text-align: center;
+}
+
+
+.pop-out-column-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pop-out-container{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 40%;
+    align-items: center;
+    padding: 0px 10%;
+    width: 100%;
+    height: 20%;
+    z-index: 2;
+    display: none;
+}
+
+#pop-out-close-button{
+    width: 14px;
+    position: relative;
+    top: -5px;
+    left: 230px;
+}
+
+#pop-out-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 60%;
+    background-color: #000000;
+    display: none;
+}
+
+#pop-out-image-1,
+#pop-out-image-2,
+#pop-out-image-3,
+#pop-out-image-4{
+    display: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#pop-out-button{
+    position: absolute;
+    top: 240px;
+}
 
 
 

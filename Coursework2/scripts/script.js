@@ -90,24 +90,4 @@ $(function(){
     })
 
 
-
-    //SERVICES PAGE
-    var servId; 
-
-    $(".service").on("mouseenter", function(){
-        servId = $(this).attr("id");
-        //alert(servId);
-        $("#service-header-"+servId).css({"font-size":"22px"});
-        $("#service-description-"+servId).css({"font-size":"18px"});
-        $("#"+servId).css({"height":"340px", "width":"590px"});
-    })
-
-    $(".service").on("mouseleave", function(){
-       
-        $("#service-header-"+servId).css({"font-size":"20px"});
-        $("#service-description-"+servId).css({"font-size":"16px"});
-        $("#"+servId).css({"height":"300px", "width":"550px"});
-
-    })
-
 });
