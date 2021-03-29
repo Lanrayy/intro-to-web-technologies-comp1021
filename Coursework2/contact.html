@@ -9,13 +9,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
         <script src="scripts/jquery.js"></script>
         <script src="scripts/script.js"></script>
-        <!--<script src="https://maps.google.com/maps/api/js?sensor=true"></script>-->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <style>
+            header, section, footer, aside, nav, main, article, figure {
+                display: block; 
+        }
+        </style>
+
 
         
     </head>
 
     <body >
-
+        <div class="privacy-notice-pop-up-overlay" ></div>
         <!--Header of the website-->
         <header class="header">
             <div class="header-column header-column-1">
@@ -56,13 +64,15 @@
                     <p>Use the contact form to get in touch with me</p>
                     <form>
                         <label>Full Name
-                            <input placeholder="Please enter your full name.." type="text"/>
+                            <input class="input" placeholder="Please enter your full name.." type="text"/>
                         </label>
-                        <label>Email Address
+                        <label>Email Address*
                             <input placeholder="Enter your email address..." type= "email" required/>
                         </label>
-                        <label> What services are you enquiring about?
-                        <select placeholder="Please pick a value..." required>
+                        <label> What services are you enquiring about?*
+                        <select required>
+
+                            <option value="" disabled>Please pick an option...</option>
                             <option>Logo Design</option>
                             <option>Business Card</option>
                             <option>Website Design</option>
@@ -70,7 +80,7 @@
                             <option>Banner Design</option>
                         </select>
                         </label>
-                        <label> Message
+                        <label> Message*
                             <textarea maxwidth="600" placeholder="Write your message here..." required></textarea>
                         </label>
                         <label>
@@ -108,12 +118,79 @@
 
         </section>
 
-        <!--Privacy Notice-->
+        <!-- PRIVACY POP-UP-->
+        <div class="privacy-notice-pop-up pop-up">
+            <div class="privacy-close-button-container">
+                <a href="#"><img id="privacy-close-button" src="images/close_black.svg"/></a>
+            </div>
+
+            <div class="privacy-notice-pop-up-header-container">
+                <h4 class="privacy-notice-pop-up-header" >Advanced Cookie Settings</h4>
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Essential cookies</h4>
+                    <p class="cookie-description">These cookies enable core functionality such as security, 
+                        verification of identity and network management. These cookies can’t be disabled.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Marketing Cookies</h4>
+                    <p class="cookie-description">These cookies are used to track advertising effectiveness to provide a 
+                        more relevant service and deliver better ads to suit your interests.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Functional Cookies</h4>
+                    <p class="cookie-description">These cookies collect data to remember 
+                        choices users make to improve and give a more personalised experience.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+  
+            </div>
+
+            <div class="cookie-container">
+                <div>
+                    <h4 class="cookie-header">Enable Functional Cookies</h4>
+                    <p class="cookie-description">These cookies collect data to remember 
+                        choices users make to improve and give a more personalised experience.</p>    
+                </div>
+
+                <div class="checkbox-container">
+                        <input type="checkbox"/>  
+                </div>
+  
+            </div>
+
+            <div class="save-button-container">
+                <button class="save-button button" >Save</button>
+            </div>
+        </div>
+
+        <!--Privacy Notice - COOKIE BANNER-->
         <section class="privacy-notice">
             <div class="privacy-notice-container"> 
                 <p>We use cookies on our website to see how you interact with it. By accepting, you agree to our use of such cookies.</p>
                 <div>
-                    <button class="accept-button" > Accept</button>
+                    <button class="privacy-notice-button advanced-button"> Advanced</button>
+                    <button class="privacy-notice-button accept-button"> Accept</button>
                     <a href="#"><img id="close-button" src="images/close.svg"/></a>
                 </div>
                 

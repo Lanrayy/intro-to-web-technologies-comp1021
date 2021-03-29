@@ -5,19 +5,6 @@
   }
 
 
-
-  .privacy-notice-container{
-    display: flex;
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    border: 1px solid rgb(218, 218, 218);
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 #close-button{
     width: 10px;
     height: 10px;
@@ -45,4 +32,91 @@
     text-decoration: line-through;
 }
 
+.privacy-notice-pop-up-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 60%;
+    background-color: #000000;
+    display: none;
+}
+
+.privacy-notice-pop-up{
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    height: 580px;
+    background-color: #E7E6E6;
+    color:#00256B;
+    z-index: 1;
+    display: none;
+
+}
+
+
+.privacy-notice-pop-up-header-container{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding-left: 10px;    
+}
+
+.privacy-close-button-container{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 14px;
+}
+
+#privacy-close-button{
+    width: 14px;
+}
+
+.privacy-notice-pop-up-header{
+    font-size: 24px;
+}
+
+.cookie-container{
+    height: 95px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 1px solid #E7E6E6;
+}
+
+.cookie-header{
+    height: 25px;
+    margin-top: 5px;
+}
+
+.cookie-description{
+    line-height: 18px;
+    font-size: 14px;
+}
+.checkbox-container{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+
+}
+
+.save-button-container{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.save-button{
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    background-color: #00256B;
+}
+
+.save-button:hover{
+    box-shadow: none;
+}
 
