@@ -9,6 +9,7 @@ $(function(){
     //
     //when the cursor hovers over a service box
     //
+
     $(".service").on("mouseenter", function(){
         servId = $(this).attr("id");
         //alert(servId);
@@ -37,6 +38,9 @@ $(function(){
         //decrease size of box
         $("#"+servId).css({"height":"300px", "width":"550px"});
     })
+
+ 
+ 
 
     //
     //when a service box is clicked, show the information about that service in a pop up
